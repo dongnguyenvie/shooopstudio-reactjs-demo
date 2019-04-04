@@ -1,0 +1,4 @@
+export const FETCH_MENU = 'FETCH_MENU';
+export const FETCH_SLIDER = 'FETCH_SLIDER';
+export const FETCH_OUTSTADING = 'FETCH_OUTSTADING';
+export const FETCH_PRODUCT = 'FETCH_PRODUCT';
