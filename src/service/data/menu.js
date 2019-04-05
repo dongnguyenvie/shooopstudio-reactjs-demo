@@ -2,26 +2,26 @@
 export default [
     {
         name: 'Home',
-        href: '#'
+        href: '/'
     },
     {
         name: 'Pages',
-        href: '#'
+        href: '/pages'
     },
     {
         name: 'ShortCodes',
-        href: '#'
+        href: '/shortcode'
     },
     {
         name: 'Plugins',
-        href: '#'
+        href: '/plugins'
     },
     {
         name: 'Products',
-        href: '#'
+        href: '/product-list'
     },
     {
         name: 'On sale',
-        href: '#'
+        href: '/on-sale'
     }
 ]

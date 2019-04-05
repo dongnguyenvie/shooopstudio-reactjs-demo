@@ -2,27 +2,28 @@ import React from 'react';
 import SliderProduct from 'react-slick';
 import { connect } from 'react-redux';
 import * as Action from '../../../reducers/product';
-import data from '../../../service/data/product'
-
+import data from '../../../service/data/product';
+import { Link } from 'react-router-dom';
 class ProductWrapOne extends React.Component {
   componentWillMount () {
     this.props.fetchProduct()
-    // console.log(this.props.product)
   }
   renderProduct () {
     const {product} = this.props
     return data.map((item, index) => (
       <div key={index}>
         <div className="product-wrap-one__container mx-1 px-1 position-relative">
+        <Link to={{ pathname: "/product", search: `?images=${item.images}` }}>
           <img src={item.images} 
             className="product-wrap-one__img"
             key={index}/>
           <div className="product-wrap-one__content d-flex flex-column  pl-4 py-3">
-            <a>{item.title}</a>
-            <span className="product-wrap-one__price">
+            <span className="text-body">{item.title}</span>
+            <span className="product-wrap-one__price text-body">
             £{item.price}
             </span>
           </div>
+        </Link>
         </div>
       </div>
     ))

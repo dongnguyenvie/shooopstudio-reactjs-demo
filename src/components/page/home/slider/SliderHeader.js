@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as Action from '../../../reducers/slider';
+import * as Action from '../../../../reducers/slider';
 import Slider from "react-slick";
 
 /*eslint-disable */

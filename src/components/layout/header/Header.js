@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../../assets/images/logo/logo.png';
 import imgCart from '../../../assets/images/shopping-bag.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
       <div className="col-sm-3 col-12">
         <div className="row">
           <div className="col-sm-12 pl-4 col-12">
-            <img src={logo} alt="Logo woo" className="default-menu-logo"/>
+            <Link to={{ pathname: "/" }}>
+              <img src={logo} alt="Logo woo" className="default-menu-logo"/>
+            </Link>
           </div>
         </div>
       </div>

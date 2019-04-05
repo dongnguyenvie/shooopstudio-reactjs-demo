@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import * as Action from '../../../reducers/menu';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 
 /*eslint-disable */
 class MenuHeader extends React.Component {
@@ -17,8 +18,7 @@ class MenuHeader extends React.Component {
         {menu.length && <ul className="p-0 m-0 overflow-hidden w-100 d-block">
           {menu.map((item, index) => (
             <li key={index}>
-              <a href={item.href}
-                className="text-uppercase">{item.name}</a>
+              <Link to={item.href} className="text-uppercase">{item.name}</Link>
             </li>
           ))}
         </ul>}
