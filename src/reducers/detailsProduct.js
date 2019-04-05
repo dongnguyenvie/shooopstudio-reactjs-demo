@@ -1,6 +1,10 @@
 import * as TYPE from '../constants/ActionType';
 
-export const productDetail = (state = {}, action) => {
+const detailDefault = {
+    title: ['await...'],
+    content: ['awit...']
+}
+export const productDetail = (state = detailDefault, action) => {
   switch (action.type) {
       case TYPE.FETCH_PRODUCT_DETAIL: {
         console.log('sss', action.data)
